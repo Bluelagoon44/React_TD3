@@ -1,14 +1,12 @@
+import { BrowserRouter } from 'react-router'
 import './App.css'
-import Experiences from './Experiences'
-import Identity from './Identity'
-import { experiencesList, infos } from './infos'
+import Router from './Router.jsx'
 
 function App() {
   return (
-    <>
-      <Identity data={infos} isFromRi7={infos.campus==="Ri7"}/>
-      <Experiences experiencesList={experiencesList} />
-    </>
+    <BrowserRouter>
+      <Router/>
+    </BrowserRouter>
   )
 }
 
